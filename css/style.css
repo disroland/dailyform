@@ -1,0 +1,117 @@
+*{
+	box-sizing: border-box;
+}
+*::selection{
+	color: silver;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+a {
+	text-decoration: none;
+	color:red;
+}
+input::-webkit-input-placeholder {
+	color:black;
+	line-height: 3em;
+	opacity: .9;
+	padding-left: 12px;
+	background-color: lightgray;
+	text-indent: 0px;   transition: text-indent 0.3s ease;
+	transition: .5s;
+}
+
+input:focus::-webkit-input-placeholder {text-indent: 500px;   transition: text-indent 0.3s ease;}
+
+.main {
+	height: 600px;
+	width: 800px;
+	background: linear-gradient(to top right, #ff512f, #dd2476);
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+.container{
+	width: 460px;
+	height: 470px;
+	border-radius: 10px;
+	background-color: #fff;
+}
+.wrapper {
+	padding: 10px 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+}
+.account-header {
+	display: flex;
+	justify-content: flex-start;
+	-ms-align-items: center;
+	align-items: center;
+	height: 30px;
+}
+.account-header div {
+padding-right: 10px;
+}
+
+.account-header h1 {
+font-family: sans-serif;
+font-size: 22pt;
+color: rgba(27, 28, 29, 255);
+text-align: left;
+}
+
+.form-text
+{
+font-size: 13px;
+padding-bottom: 40px;
+}
+
+.form__element {
+	height: 40px;
+	width: 100%;
+	margin-bottom: 20px;
+	border-radius: 3px;
+}
+.form__element>input{
+	height: 40px;
+	width: 48%;
+	border-radius: 3px;
+}
+.name-input {
+	display: flex;
+	justify-content: space-between;
+}
+button{
+	background-color: #ea355a;
+	box-shadow:  0 1px  2px #ea355a ;
+	font-weight: bold;
+	color: white;
+	border: solid 2px transparent;
+	margin-top:20px; 
+/*	transition: .4s;
+*/	cursor: pointer;
+}
+button:hover{
+	background-color: lightgray;
+	color:#ea355a;
+	text-shadow: 0 0 2px white;
+	border: solid 2px #ea355a;
+	margin-top:20px; 
+}
+button:active{
+	margin-top:20px; 
+	background-color: lightgray;
+	color:black;
+	text-shadow: 0 0 2px black;
+	border: solid 2px gold;
+}
+
+.privacy-text {
+	font-size: 12px;
+}
